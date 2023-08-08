@@ -36,7 +36,7 @@ export default function Card({
   }
 
   const deleteHandler = async() => {
-     const response = await axios.delete(`http://localhost:3000/admin/project/${id}`,{
+     const response = await axios.delete(`https://small-project-website.onrender.com/admin/project/${id}`,{
       headers:{
          'Authorization':'bearer '+localStorage.getItem('token')
       }

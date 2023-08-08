@@ -21,7 +21,7 @@ export default function Explanation() {
 
     useEffect(()=>{
        const  singleProject = async () => {
-         const response = await axios.post(`http://localhost:3000/user/project/${id}`,{
+         const response = await axios.post(`https://small-project-website.onrender.com//user/project/${id}`,{
             id
          },{
              headers:{

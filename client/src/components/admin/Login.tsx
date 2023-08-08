@@ -12,7 +12,7 @@ export default function Login() {
 
   function submitHandler(){
     const getToken = async()=>{
-       const resp = await axios.post('http://localhost:3000/admin/login',{
+       const resp = await axios.post('https://small-project-website.onrender.com/admin/login',{
         username,
         password
        },{

@@ -22,7 +22,7 @@ export default function Dashboard() {
    const navigate = useNavigate()
 
    const createCourse = async() => {
-      const response = await axios.post('http://localhost:3000/admin/project',{
+      const response = await axios.post('https://small-project-website.onrender.com/admin/project',{
          title ,description,tags,code,githubLink,explanation,imageLink,demoLink
       },{
          headers:{

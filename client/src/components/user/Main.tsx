@@ -26,7 +26,7 @@ export default function Main() {
     function submitHandler(){
       const getRequest = async() => {
       try {
-        const response = await axios.post(`http://localhost:3000/user/search/${search}`,{
+        const response = await axios.post(`https://small-project-website.onrender.com/user/search/${search}`,{
           pageNumber:1
       },{
           headers:{"Content-Type":"application/json"
@@ -56,7 +56,7 @@ export default function Main() {
     useEffect(()=>{
        
         const getRequest = async() => {
-           const response = await axios.post('http://localhost:3000/user/projects',{
+           const response = await axios.post('https://small-project-website.onrender.com/user/projects',{
                 pageNumber:1
             },{
                 headers:{"Content-Type":"application/json"
