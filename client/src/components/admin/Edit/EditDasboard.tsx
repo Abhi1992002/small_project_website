@@ -24,7 +24,7 @@ export default function EditDasboard() {
     useEffect(()=>{
        const getProject = async() => {
    
-        const response = await axios.post(`http://localhost:3000/user/project/${id}`,{
+        const response = await axios.post(`https://small-project-website.onrender.com/user/project/${id}`,{
             id
         },{
             headers:{
