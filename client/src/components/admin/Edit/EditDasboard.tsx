@@ -51,7 +51,7 @@ export default function EditDasboard() {
     },[])
 
     const editCourse = async() => {
-        const response = await axios.put(`http://localhost:3000/admin/project/${id}`,{
+        const response = await axios.put(`https://small-project-website.onrender.com/admin/project/${id}`,{
             title,demoLink ,description,tags,code,explanation,imageLink,githubLink
         },{
             headers:{
